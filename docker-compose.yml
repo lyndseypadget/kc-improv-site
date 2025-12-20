@@ -1,0 +1,19 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/site
+      - /site/vendor
+      - /site/.bundle
+      - bundle_cache:/usr/local/bundle
+    container_name: alliepadget-container
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLE_PATH=/usr/local/bundle
+      - BUNDLE_FORCE_RUBY_PLATFORM=true
+    command: bundle exec jekyll serve --host 0.0.0.0 --livereload --incremental --config _config.yml
+
+volumes:
+  bundle_cache:
