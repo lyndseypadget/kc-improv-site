@@ -1,0 +1,21 @@
+- name: Home
+  path: "#top"
+  section_id: home
+- name: About
+  path: "#about"
+  section_id: about
+- name: Experience
+  path: "#experience"
+  section_id: experience
+- name: Creative Pursuits
+  path: "#creative-pursuits"
+  section_id: creative-pursuits
+- name: Resume
+  path: "#resume"
+  section_id: resume
+- name: Recommendations
+  path: "#recommendations"
+  section_id: recommendations  
+- name: Contact
+  path: "#contact"
+  section_id: contact

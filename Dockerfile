@@ -27,7 +27,7 @@ RUN bundle config set --global path '/usr/local/bundle'
 WORKDIR /site
 
 # Copy any existing Gemfile
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile ./
 
 # Install dependencies
 RUN bundle install
