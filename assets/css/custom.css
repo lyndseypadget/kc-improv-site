@@ -1,7 +1,7 @@
 .full-custom {
   background-size: contain;
   background-position-y: unset;
-  
+
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
@@ -11,5 +11,9 @@
   .full-custom {
     background-size: 90%;
     background-position-y: bottom;
+  }
+
+  .home-custom {
+    top: 12%;
   }
 }

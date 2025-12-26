@@ -82,7 +82,7 @@ clients:
     </video>
     -->
     <div class='overlay'></div>
-    <div class='layer'>
+    <div class='layer home-custom'>
       <p class="small-title">Allie Padget knows</p>
       <h1 class='thin' id="to-be-update">
          <span class="fir">Flowers.</span><br/>
@@ -92,7 +92,7 @@ clients:
       <h2 class='thin'>
        I am building my education and experience toward a career in floriculture.
        {% assign nav_obj = site.data.nav | where:'section_id','works' | first %}
-       <a href='{{ "index.html" | append:nav_obj.path | relative_url }}'>See my interests</a>
+       <a href='{{ "#about" | append:nav_obj.path | relative_url }}'>See my interests</a>
       </h2>
     </div>
   </div>
