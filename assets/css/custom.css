@@ -1,6 +1,6 @@
 .full-custom {
   background-size: contain;
-  background-position-y: unset;
+  background-position-y: bottom;
 
   background-position-x: right;
   background-repeat: no-repeat;
@@ -10,7 +10,6 @@
 @media only screen and (max-width: 50em) {
   .full-custom {
     background-size: 90%;
-    background-position-y: bottom;
   }
 
   .home-custom {
