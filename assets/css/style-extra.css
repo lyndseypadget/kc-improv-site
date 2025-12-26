@@ -926,7 +926,7 @@ form input.error, form textarea.error {
     color: #fff; }
 
 .contact-details {
-  width: 260px;
+  width: auto;
   text-align: center;
   color: #fff; }
   .contact-details h4 {
@@ -944,7 +944,7 @@ form input.error, form textarea.error {
     padding: 20px 20px 10px; }
 
 .border-wrapper {
-  width: 260px;
+  width: auto;
   position: relative;
   overflow: hidden; }
   .border-wrapper .borders {
@@ -1022,7 +1022,7 @@ form input.error, form textarea.error {
   color: #ccc; }
 
 .border-wrapper {
-  width: 260px;
+  width: auto;
   position: relative;
   overflow: hidden; }
   .border-wrapper .borders {
@@ -1100,7 +1100,7 @@ form input.error, form textarea.error {
   color: #999; }
 
 .border-wrapper {
-  width: 260px;
+  width: auto;
   position: relative;
   overflow: hidden; }
   .border-wrapper .borders {
@@ -1547,7 +1547,7 @@ p.small-title {
   .personal .section #contact_form textarea {
     height: 11rem; }
 .personal .section .contact-details {
-  width: 260px;
+  width: auto;
   text-align: center;
   color: #fff; }
   .personal .section .contact-details h4 {
@@ -1681,7 +1681,7 @@ p.small-title {
   .section #contact_form textarea {
     height: 11rem; }
 .section .contact-details {
-  width: 260px;
+  width: auto;
   text-align: center;
   color: #ccc; }
   .section .contact-details h4 {
@@ -1692,7 +1692,7 @@ p.small-title {
     margin: 10px;
     padding: 20px; }
 .section .border-wrapper {
-  width: 260px;
+  width: auto;
   position: relative;
   overflow: hidden; }
   .section .border-wrapper .borders {
@@ -4069,7 +4069,7 @@ body {
       border: 4px solid #F9CE06;
       border-radius: 7px; }
   .modTimeline .details {
-    width: 260px;
+    width: auto;
     display: block;
     opacity: 0;
     position: absolute;
