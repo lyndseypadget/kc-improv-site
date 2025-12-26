@@ -176,18 +176,43 @@ clients:
   </div>
 </div> -->
 
-<!-- generic rotating slideshow -->
-<div class="full no-padding">
-  <div class='mod modBoxedSlider' data-timeout='1500'>
-    <div class='slides'>
-      {% for image in page.team_slides %}
-        <div class='slide'>
-          <img width="1200" height="800" alt="" src="{{ image | relative_url }}" />
+
+<a id='recommendations'></a>
+<div class='full no-overflow no-padding parallax' style="background-image: url({{ "/assets/images/floral-24.jpg" | relative_url }})">
+  <div class="right-half">
+    <div class="two spacing"></div>
+    <div class="row">
+      <div class="section-header alt white">
+        <h2>What people say about me</h2>
+      </div>
+      <div class='mod modTestimonials simple'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items'>
+              {% for t in page.testimonials %}
+                <div class='item'>
+                  <p class='quote'>{{ t.quote }}</p>
+                  <div class="two spacing"></div>
+                  <div class='author'>
+                    <p class='author-avatar'>
+                      <img width="80" height="80" alt="" src="{{ t.author.avatar | relative_url }}" />
+                    </p>
+                    <p class='author-name'>
+                      -
+                      <strong>{{ t.author.name }}</strong>
+                      {%- if t.author.position %}, {{ t.author.position }}{% endif %}
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
         </div>
-      {% endfor %}
+      </div>
     </div>
   </div>
 </div>
+
 
 
 <a id='creative-pursuits'></a>
@@ -256,45 +281,19 @@ clients:
 
 
 
-<a id='recommendations'></a>
-<div class='full no-overflow no-padding parallax' style="background-image: url({{ "/assets/images/floral-24.jpg" | relative_url }})">
-  <div class="right-half">
-    <div class="two spacing"></div>
-    <div class="row">
-      <div class="section-header alt white">
-        <h2>What people say about me</h2>
-      </div>
-      <div class='mod modTestimonials simple'>
-        <div class='row'>
-          <div class='small-12 columns'>
-            <div class='items'>
-              {% for t in page.testimonials %}
-                <div class='item'>
-                  <p class='quote'>{{ t.quote }}</p>
-                  <div class="two spacing"></div>
-                  <div class='author'>
-                    <p class='author-avatar'>
-                      <img width="80" height="80" alt="" src="{{ t.author.avatar | relative_url }}" />
-                    </p>
-                    <p class='author-name'>
-                      -
-                      <strong>{{ t.author.name }}</strong>
-                      {%- if t.author.position %}, {{ t.author.position }}{% endif %}
-                    </p>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
+
+<!-- generic rotating slideshow -->
+<div class="full dark no-padding">
+  <div class='mod modBoxedSlider' data-timeout='1500'>
+    <div class='slides'>
+      {% for image in page.team_slides %}
+        <div class='slide'>
+          <img width="1200" height="800" alt="" src="{{ image | relative_url }}" />
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
-
-
-
-<div class="four spacing"></div>
 
 
 <a id='contact'></a>
