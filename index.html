@@ -68,10 +68,16 @@ great at taking constructive criticism and never bats an eye when asked to take 
 Rock'
 
 clients:
-  - /assets/images/client-01.jpg
-  - /assets/images/client-02.jpg
-  - /assets/images/client-03.svg
-  - /assets/images/client-04.jpg  
+  - src: /assets/images/client-01.jpg
+    link: https://www.facebook.com/HeartlandNursery/
+  - src: /assets/images/client-02.jpg
+    link: https://www.hy-vee.com/discover/shop/custom-flowers
+  - src: /assets/images/client-03.svg
+    link: https://mckeeversmarketandeatery.com/department/floral/
+  - src: /assets/images/client-04.jpg
+    link: https://www.pricechopper.com/departments/floral/
+  - src: /assets/images/client-05.jpg
+    link: https://www.instagram.com/paiges.petals/
 ---
 
 <div class='full full-custom no-padding parallax home-video-wrapper' style="background-image: url({{ "/assets/images/hero-right.jpg" | relative_url }})">
@@ -144,9 +150,9 @@ clients:
   <div class="clients">
     <div class='row'>
       {% for client in page.clients %}
-        <div class='large-3 medium-6 small-6 columns'>
+        <div class='medium-6 small-6 columns'>
           <div class="client">
-            <a href="javascript:void(0)"><img alt="" src="{{ client | relative_url }}" style="max-height: 100px;" /></a>
+            <a href="{{ client.link }}" target="_blank"><img alt="" src="{{ client.src | relative_url }}" style="max-height: 100px;" /></a>
           </div>
         </div>
       {% endfor %}
