@@ -4,15 +4,15 @@
 - name: About
   path: "#about"
   section_id: about
-- name: Experience
-  path: "#experience"
-  section_id: experience
-- name: Creative Pursuits
-  path: "#creative-pursuits"
-  section_id: creative-pursuits
-- name: Resume
-  path: "#resume"
-  section_id: resume
+- name: Calendar
+  path: "#calendar"
+  section_id: calendar
+- name: Private Events
+  path: "#private-events"
+  section_id: private-events
+- name: Corporate Training
+  path: "#corporate-training"
+  section_id: corporate-training
 - name: Recommendations
   path: "#recommendations"
   section_id: recommendations  
