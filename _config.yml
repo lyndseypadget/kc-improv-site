@@ -20,7 +20,7 @@ title: alliepadget.com
 
 description: > # this means to ignore newlines until "baseurl:"
   Allie Padget is a dedicated student and worker with a strong interest in floriculture.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/kc-improv-site" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
