@@ -44,7 +44,7 @@ exclude: ['gulpfile.js', 'Gemfile', 'Gemfile.lock']
 collections:
   works:
     output: true
-    permalink: /portfolio/:name/
+    permalink: /kc-improv-site/:name/
 
 defaults:
   - scope:
